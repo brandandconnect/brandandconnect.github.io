@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/clientes.css">
+    <link rel="stylesheet" href="./css/sections__responsive.css">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Somos una agencia enfocada en impulsar PyMes con soluciones de desarrollo, UX UI, marketing y diseño gráfico.">
+    <title>Brand & Connect</title>
+    <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1361019977592263'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=1361019977592263&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    
+</head>
+<body>
+<header>
+    <img class="menu-icon" id="burguer" src="./icons/menu.png" alt="Menú">
+    <figure>
+        <img src="./img/brand&connect.png" alt="Logo de Brand & Connect">
+    </figure>
+    <nav class="menu">
+        <ol class="menu__items">
+            <ul> <a href="./index.html"> Home </a> </ul>
+            <ul> <a target="_blank" href="./web.html"> Páginas web </a> </ul>
+            <ul> <a href="./servicios.html"> Servicios </a> </ul>
+            <ul> <a id="a-home" href="/"> Clientes </a> </ul>
+            <ul> <a href="./contacto.html"> Contacto </a> </ul>
+        </ol>
+    </nav>
+</header>
+<main>
+    <img src="./img/client.png" alt="">
+    <h1> Nuestros clientes </h1>
+    <p> Estamos sumamente orgullosos de formar parte de proyectos extraordinarios como lo son los de nuestros clientes. </p> 
+</main>
+<section class="customer">
+    <img src="./clients/Logo1.png" id="portrait" alt="Cliente de Brand & Connect">
+    <img src="./clients/logo2.png" id="landscape" alt="Cliente de Brand & Connect">
+    <img src="./clients/logo3.png" id="portrait" alt="Cliente de Brand & Connect">
+    <img src="./clients/logo4.png" id="landscape" alt="Cliente de Brand & Connect">
+    <img src="./clients/logo5.png" id="landscape" alt="Cliente de Brand & Connect">
+    <img src="./clients/logo6.png" id="portrait" alt="Cliente de Brand & Connect">
+    <img src="./clients/logo7.png" id="landscape" alt="Cliente de Brand & Connect">
+    <img src="./clients/logo8.png" id="portrait" alt="Cliente de Brand & Connect">
+    <img src="./clients/logo9.png" id="portrait"alt="Cliente de Brand & Connect">
+</section>
+<footer>
+    <a target="_blank" href="https://instagram.com/brandandconnect"> <img src="./icons/ig.png" alt="Instagram de Brand & Connect"> </a>
+    <a target="_blank"  href="https://facebook.com/brandandconnect"> <img src="./icons/contact_facebook.png" alt="Instagram de Brand & Connect"> </a>
+    <a target="_blank" href="malito:contacto@brandandconnect.com"> <img src="./icons/contact_mail.png" alt="Instagram de Brand & Connect"> </a>
+</footer>
+<script>
+    const menu = document.querySelector('.menu');
+    const burguer = document.querySelector('#burguer');
+    
+    burguer.addEventListener('click', show)
+    
+    function show () {
+        if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');
+    } else {
+        menu.classList.add('is-active');
+    }
+    }
+</script>
+</body>
+</html>

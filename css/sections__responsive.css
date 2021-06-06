@@ -1,0 +1,79 @@
+@media screen and (min-width: 767px)
+{
+    main img
+    {
+        height: 70vh;
+    }
+
+    main h1, p
+{
+    margin: 0 var(--wrapper);
+    margin-top: 50px;
+}
+
+.card
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5vw;
+}
+
+.card__container
+{
+    margin: 0 30px 10px;
+    width: 280px;
+}
+
+.card__info
+{
+    margin: 0 10px
+}
+
+
+}
+
+@media screen and (min-width: 1023px)
+{  
+
+    .menu
+    {
+        
+        left: -40vw;
+        width: 40vw;
+    }
+    
+    .menu-icon
+    {transition: 450ms;}
+    
+    .menu-icon:hover
+    {
+        width: 40px;
+    }
+
+    .card__info
+{
+    margin: 0 20px
+}
+
+     
+
+    h1
+    {
+        font-size: 60px;
+    }
+
+
+
+    #landscape
+{
+    width: 20vw;
+}
+
+#portrait
+{
+    height: 10vw;
+}
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/contact__responsive.css">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Somos una agencia enfocada en impulsar PyMes con soluciones de desarrollo, UX UI, marketing y diseño gráfico.">
+    <title>Brand & Connect</title>
+    <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1361019977592263'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=1361019977592263&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    
+</head>
+<body>
+<header>
+    <img class="menu-icon" id="burguer" src="./icons/menu.png" alt="Menú">
+    <figure>
+        <img src="./img/brand&connect.png" alt="Logo de Brand & Connect">
+    </figure>
+    <nav class="menu">
+        <ol class="menu__items">
+            <ul> <a href="./index.html
+                "> Home </a> </ul>
+            <ul> <a target="_blank" href="./web.html"> Páginas web </a> </ul>
+            <ul> <a href="./servicios.html"> Servicios </a> </ul>
+            <ul> <a href="./clientes.html"> Clientes </a> </ul>
+            <ul> <a id="a-home" href="./contacto.html"> Contacto </a> </ul>
+        </ol>
+    </nav>
+</header>
+<main>
+    <div>
+        <h1> Horarios de atención </h1>
+        <p> Lunes a jueves de 09:30am a 07:00pm</p>
+        <p> Viernes de 09:30am a 04:30pm</p>
+        <p> Sábado de 09:30am a 02:00pm</p>
+        <div class="contact__items">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=525569015183&text=%C2%A1Hola!%20Estoy%20interesado%20en%20sus%20servicios."> <div class="contact__container">
+                <img src="./icons/whatsapp.svg" alt="">
+            </div> </a> 
+            <a target="_blank" href="https://instagram.com/brandandconnect"> <div class="contact__container">
+                <img src="./icons/ig.png" alt="">
+            </div> </a> 
+            <a target="_blank" href="https://facebook.com/brandandconnect"> <div class="contact__container">
+                <img src="./icons/contact_facebook.png" alt="">
+            </div> </a> 
+            <a target="_blank" href="malito:contacto@brandandconnect.com"> <div class="contact__container">
+                <img src="./icons/contact_mail.png" alt="">
+            </div> </a> 
+        </div>
+    </div>
+</main>
+<script>
+    const menu = document.querySelector('.menu');
+    const burguer = document.querySelector('#burguer');
+    
+    burguer.addEventListener('click', show)
+    
+    function show () {
+        if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');
+    } else {
+        menu.classList.add('is-active');
+    }
+    }
+</script>
+</body>
+</html>
