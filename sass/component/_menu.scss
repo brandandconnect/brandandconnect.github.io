@@ -1,0 +1,55 @@
+.menu {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: $light;
+    box-shadow:  0px -2px 3px #00000029;
+    z-index: 999;
+    @include flex;
+    justify-content: space-between;
+
+    @include media (desktop-s) {
+        height: 20vw;
+        width: 60px;
+        border-radius: 0 10px 10px 0;
+        justify-content: center;
+        box-shadow:  2px 0px 3px #00000029;
+        flex-direction: column;
+        bottom: 35%;
+    }
+
+    &__section {
+        width: 33.333%;
+        @include wrapper;
+        @include flex;
+
+        @include media (desktop-s) {
+            margin: 0;
+            height: 33.333%;
+        }
+
+        a {
+            text-decoration: none
+        }
+        &--item {
+            @include flex;
+            flex-direction: column;
+            p {
+                font-size: 11px;
+            }
+            p, i {
+                color: $gray-dark;
+            }
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+    &__section .select {
+        p, i {
+            color: $blue;
+        }
+    }  
+}

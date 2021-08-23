@@ -2,194 +2,181 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="favicon" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/main__responsive.css">
-    <meta data-n-head="ssr" data-hid="description" name="description" content="Somos una agencia enfocada en impulsar PyMes con soluciones de desarrollo, UX UI, marketing y diseño gráfico.">
-    <title>Brand & Connect</title>
-    <!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1361019977592263'); 
-fbq('track', 'PageView');
-</script>
-<noscript>
-<img height="1" width="1" 
-src="https://www.facebook.com/tr?id=1361019977592263&ev=PageView
-&noscript=1"/>
-</noscript>
-<!-- End Facebook Pixel Code -->
-
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <title> Brand & Connect | Agencia que ayuda a Pymes a crecer </title>
 </head>
-<body>
-<header>
-    <img class="menu-icon" id="burguer" src="./icons/menu.png" alt="Menú">
-    <figure>
-        <img src="./img/brand&connect.png" alt="Logo de Brand & Connect">
-    </figure>
-    <nav class="menu">
-        <ol class="menu__items">
-            <ul> <a id="a-home" href="/"> Home </a> </ul>
-            <ul> <a target="_blank" href="./web.html"> Páginas web </a> </ul>
-            <ul> <a href="./servicios.html"> Servicios </a> </ul>
-            <ul> <a href="./clientes.html"> Clientes </a> </ul>
-            <ul> <a href="./contacto.html"> Contacto </a> </ul>
-        </ol>
-    </nav>
-</header>
-<main>
-    <img class="background" src="./background.svg">
-    <img class="background2" src="./background.png">
-    <h1 class="animate__animated animate__fadeInLeft" > Agencia digital para PyMES </h1>
-    <p class="text animate__animated animate__fadeIn"> Impulsamos negocios con soluciones de: </p>
-    <div class="main__service-section1">
-        <div class="main__service-card animate__animated animate__fadeInUpBig" id="ux"> 
-            <img src="./img/ux.png" alt="UX, UI">
-            <div class="main__service-card--text-container"> 
-                <h2> UX, UI </h2>
+<body id="central-home">
+    <div class="lds-ellipsis" id="loader"> <img src="/asset/logo/brandandconnect.png" alt=""> <div class="lds-ellipsis__container"><div></div><div></div><div></div><div></div></div></div>
+
+    <header>
+        <img src="/asset/logo/brandandconnect.png" alt="">
+    </header>
+
+    <main class="main">
+        <div class="main__text">
+            <h1> La agencia que ayuda a Pymes a crecer </h1>
+            <p> Hacemos crecer a pequeñas y medianas empresas con soluciones eficientes de: </p>
+        </div>
+        <div class="main__card-container">
+            <div class="main__card-container--card one">
+                <div class="main__card-container--card__text-container"> <p>  UX / UI </p> </div>
+            </div>
+            <div class="main__card-container--card two">
+                <div class="main__card-container--card__text-container"> <p>  Desarrollo </p> </div>
+            </div>
+            <div class="main__card-container--card three">
+                <div class="main__card-container--card__text-container"> <p>  Marketing </p> </div>
+            </div>
+            <div class="main__card-container--card four">
+                <div class="main__card-container--card__text-container"> <p>  Diseño gráfico </p> </div>
             </div>
         </div>
-        <div class="main__service-card animate__animated animate__fadeInUpBig" id="development"> 
-            <img src="./img/desarrollo.png" alt="Desarrollo">
-            <div class="main__service-card--text-container">
-                <h2> Desarrollo </h2>
-            </div>
+    </main>
+
+    <div class="menu" id="menu"> 
+        <div class="menu__section">
+            <a id="button-servicios" href="servicios.html" class="menu__section--item">
+                <i class='bx bxs-briefcase' ></i>
+                <p> Servicios </p>
+            </a>
+        </div>
+        <div class="menu__section">
+            <a id="button-home" href="index.html" class="menu__section--item select">
+                <i class='bx bxs-home' ></i>
+                <p> Home </p>
+            </a>
+        </div>
+        <div class="menu__section">
+            <a id="button-contacto" href="contacto.html"  class="menu__section--item">
+                <i class='bx bxs-message' ></i>
+                <p> Contacto </p>
+            </a>
         </div>
     </div>
-    <div class="main__service-section2">
-        <div class="main__service-card animate__animated animate__fadeInUpBig" id="design"> 
-            <img src="./img/diseno.png" alt="UX, UI">
-            <div class="main__service-card--text-container"> 
-                <h2> Diseño </h2>
+
+    <section class="why">
+        <div class="why__text">
+            <h2> ¿Por qué elegirnos a nosotros? </h2>
+            <p> En nuestra encuesta de satisfacción, todos nuestros clientes respondieron que están muy felices con nuestros servicios.</p>
+        </div>
+        <div class="why__calification">
+            <div class="why__calification--item">
+                <div class="why__calification--item__star">
+                    <p> 5 </p>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div>
+                    <h3> Atención </h3>
+                </div>
+            </div>
+            <div class="why__calification--item">
+                <div class="why__calification--item__star">
+                    <p> 4.5 </p>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div>
+                    <h3> Calidad </h3>
+                </div>
+            </div>
+            <div class="why__calification--item">
+                <div class="why__calification--item__star">
+                    <p> 4.5 </p>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div>
+                    <h3> Precio </h3>
+                </div>
+            </div>
+            <div class="why__calification--item">
+                <div class="why__calification--item__star">
+                    <p> 4.2 </p>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div>
+                    <h3> Rapidez </h3>
+                </div>
             </div>
         </div>
-        <div class="main__service-card animate__animated animate__fadeInUpBig" id="marketing"> 
-            <img src="./img/marketing.png" alt="Desarrollo">
-            <div class="main__service-card--text-container">
-                <h2> Marketing </h2>
+    </section>
+
+    <section class="about">
+        <div class="about__stat-container">
+            <div class="about__stat-container--item">
+                <div class="about__stat-container--item__icon">
+                    <p> +40 </p>
+                </div>
+                <div class="about__stat-container--item__text">
+                    <h3>Empresas que confían en nosotros </h3>
+                </div>
+            </div>
+            <div class="about__stat-container--item">
+                <div class="about__stat-container--item__icon">
+                    <i class='bx bx-world' ></i>
+                </div>
+                <div class="about__stat-container--item__text">
+                    <h3> 2 países </h3>
+                </div>
+            </div>
+            <div class="about__stat-container--item">
+                <div class="about__stat-container--item__icon">
+                    <p> +100 </p>
+                </div>
+                <div class="about__stat-container--item__text">
+                    <h3> Servicios que ayudaron pequeñas y medianas empresas </h3>
+                </div>
             </div>
         </div>
-        
-    </div>
-</main>
-<section class="service">
-    <h1> Servicios destacados </h1>
-    <div class="service__container">
-        <div class="service__container--item">
-            <img src="./icons/web.png" alt="Páginas web">
-            <h2> Páginas web </h2>
+    </section>
+
+    <section class="blog">
+        <div class="blog__text">
+            <h2> Explora artículos para empresarios como tú </h2>
         </div>
-        <div class="service__container--item">
-            <img src="./icons/logo.png" alt="Diseño de logos">
-            <h2> Logos </h2>
-        </div>
-        <div class="service__container--item">
-            <img src="./icons/google.png" alt="Campañas en Google">
-            <h2> Campañas </h2>
-        </div>
-        <div class="service__container--item">
-            <img src="./icons/facebook.png" alt="Anuncios en redes sociales">
-            <h2> Anuncios </h2>
-        </div>
-    </div>
-    <a href="./servicios.html"> <button class="black-button" oneclick="href="'servicios'"> Conocer todos </button> </a>
-</section>
-<section class="client">
-    <h1> Nuestros clientes </h1>
-    <div class="client__responsive">
-    <div class="client__container">
-        <figure>
-            <img src="./clients/Logo1.png" alt="">
-        </figure>
-        <p> Consultora en seguridad, salud ocupacional y medio ambiente. </p>
-    </div>
-    <div class="client__container">
-        <figure>
-            <img src="./clients/logo6.png" alt="">
-        </figure>
-        <p> Compañía de landscaping con sede en Estados Unidos </p>
-    </div>
-    <div class="client__container">
-        <figure>
-            <img src="./clients/logo2.png" alt="">
-        </figure>
-        <p> Agencia de viajes nacional e internacional </p>
-    </div>
-</div>
-<a href="./clientes.html"><button class="white-button"> Ver todos </button> </a>
-</section>
-<section class="about">
-    <h1> Sé diferente a tu competencia </h1>
-    <p id="about--p"> Creemos fielmente que las pequeñas y medianas empresas de México pueden, con estrategia, crecer y diferenciar su negocio. </p>
-    <div class="about__responsive">
-        <div class="about__opinion">
-            <img src="./icons/persona.png" alt="Persona">
-            <div>
-                <h3> Luis </h3>
-                <h4> CEO GARCO </h4>
-                <P> "Diseños innovadores y atención a cliente excelente." </P>
+        <div class="blog__carousel">
+            <div class="blog__card-container">
+                <div class="blog__card-container--card">
+                    <div class="blog__card-container--card__time">
+                        <p> 3 minutos </p>
+                    </div>
+                    <div class="blog__card-container--card__title">
+                        <h3> ¿Por qué tiene más éxito una empresa que cuenta con un sitio web? </h3>
+                    </div>
+                    <a target="_blank" class="blog__card-container--card__button" href="/blog/por-que-tiene-mas-exito-una-empresa-que-cuenta con-un-sitio-web.html"> Leer artículo </a>
+                </div>
+                <div class="blog__card-container--card">
+                    <div class="blog__card-container--card__time">
+                        <p> 3 minutos </p>
+                    </div>
+                    <div class="blog__card-container--card__title">
+                        <h3> ¿Por qué tiene más éxito una empresa que cuenta con un sitio web? </h3>
+                    </div>
+                    <a class="blog__card-container--card__button" href="/blog/por-que-tiene-mas-exito-una-empresa-que-cuenta con-un-sitio-web.html"> Leer artículo </a>
+                </div>
             </div>
         </div>
-        <div class="about__opinion">
-            <img src="./icons/persona.png" alt="Persona">
-            <div>
-                <h3> Alonso </h3>
-                <h4> CEO RM </h4>
-                <P> "Excelente. Me ayudaron a concretar algunas ideas que tenia y el resultado fue bueno." </P>
-            </div>
-        </div>
-        <div class="about__opinion">
-            <img src="./icons/persona.png" alt="Persona">
-            <div>
-                <h3> Gerardo </h3>
-                <h4> CEO De Pasadita Café </h4>
-                <P> "Mi experiencia es buena, se cumplió con lo prometido y la comunicación muy efectiva." </P>
-            </div>
-        </div>
-        <div class="about__opinion">
-            <img src="./icons/persona.png" alt="Persona">
-            <div>
-                <h3> Javier del Castillo </h3>
-                <h4> CEO Indian </h4>
-                <P> "Muy buena, estoy satisfecho. Los felicito." </P>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="attention">
-    <h1> Recibe atención personalizada </h1>
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=525569015183&text=%C2%A1Hola!%20Estoy%20interesado%20en%20sus%20servicios."> <button id="attention--button">
-        <img src="./icons/whatsapp.png" alt="WhatsApp"> Enviar mensaje
-    </button> </a>
-</section>
-<footer>
-    <a target="_blank" href="https://instagram.com/brandandconnect"> <img src="./icons/ig.png" alt="Instagram de Brand & Connect"> </a>
-    <a target="_blank"  href="https://facebook.com/brandandconnect"> <img src="./icons/contact_facebook.png" alt="Instagram de Brand & Connect"> </a>
-    <a target="_blank" href="malito:contacto@brandandconnect.com"> <img src="./icons/contact_mail.png" alt="Instagram de Brand & Connect"> </a>
-</footer>
-<script>
-    const menu = document.querySelector('.menu');
-    const burguer = document.querySelector('#burguer');
-    
-    burguer.addEventListener('click', show)
-    
-    function show () {
-        if (menu.classList.contains('is-active')) {
-        menu.classList.remove('is-active');
-    } else {
-        menu.classList.add('is-active');
-    }
-    }
-</script>
+    </section>
+
+
+    <script src="/js/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<!--     <script type="text/javascript">
+        $(document).ready(home()) 
+
+        function home () {
+            $('#button-servicios').on('click', function() {
+                $("#menu").load('/servicios.html')
+                return false;
+            });
+        };
+    </script> -->
 </body>
 </html>

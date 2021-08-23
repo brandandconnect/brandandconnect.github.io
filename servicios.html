@@ -2,115 +2,150 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="favicon" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/service.css">
-    <link rel="stylesheet" href="./css/sections__responsive.css">
-    <meta data-n-head="ssr" data-hid="description" name="description" content="Somos una agencia enfocada en impulsar PyMes con soluciones de desarrollo, UX UI, marketing y diseño gráfico.">
-    <title>Brand & Connect</title>
-    <!-- Facebook Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window,document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1361019977592263'); 
-    fbq('track', 'PageView');
-    </script>
-    <noscript>
-    <img height="1" width="1" 
-    src="https://www.facebook.com/tr?id=1361019977592263&ev=PageView
-    &noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-    
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+    <link rel="stylesheet" href="/css/servicios.css">
+    <title> Servicios | Brand & Connect </title>
+    <title>Servicios</title>
 </head>
-<body>
-<header>
-    <img class="menu-icon" id="burguer" src="./icons/menu.png" alt="Menú">
-    <figure>
-        <img src="./img/brand&connect.png" alt="Logo de Brand & Connect">
-    </figure>
-    <nav class="menu">
-        <ol class="menu__items">
-            <ul> <a href="./index.html"> Home </a> </ul>
-            <ul> <a target="_blank" href="./web.html"> Páginas web </a> </ul>
-            <ul> <a id="a-home" href="./servicios.html"> Servicios </a> </ul>
-            <ul> <a href="./clientes.html"> Clientes </a> </ul>
-            <ul> <a href="./contacto.html"> Contacto </a> </ul>
-        </ol>
-    </nav>
-</header>
-<main>
-    <img src="./img/services.png" alt="">
-    <h1> Nuestros servicios </h1>
-    <p> Nuestro objetivo en cada uno de nuestros servicios es, sobre todo, realizar un trabajo de calidad y siempre buscar un factor diferenciador que te haga destacar de tu competencia. </p> 
-</main>
-<section class="card">
-    <div class="card__container">
-        <img src="./img/website.png">
-        <div class="card__info">
-            <h2> Página web </h2>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=525569015183&text=%C2%A1Hola!%20Me%20interesa%20una%20p%C3%A1gina%20web."> <button class="white-button"> Me interesa </button> </a>
+<body">
+    <header>
+        <img src="/asset/logo/brandandconnect.png" alt="">
+    </header>
+
+    <main class="main">
+
+        <div class="main__carousel">
+
+            <div class="main__carousel--item">
+                <div class="main__carousel--item__img website">
+                <div class="main__carousel--item__info">
+                    <div class="main__carousel--item__info--title">
+                        <h1> Sitio web </h1>
+                    </div>
+                    <div class="main__carousel--item__info--price">
+                        <p> Dese $2,500 MXN </p>
+                    </div>
+                    <div class="main__carousel--item__info--cta">
+                        <a href="#"> Más información </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="main__carousel--item">
+                <div class="main__carousel--item__img logo">
+                <div class="main__carousel--item__info">
+                    <div class="main__carousel--item__info--title">
+                        <h1> Diseño de logo </h1>
+                    </div>
+                    <div class="main__carousel--item__info--price">
+                        <p> $980 MXN </p>
+                    </div>
+                    <div class="main__carousel--item__info--cta">
+                        <a href="#"> Más información </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="main__carousel--item">
+                <div class="main__carousel--item__img img">
+                <div class="main__carousel--item__info">
+                    <div class="main__carousel--item__info--title">
+                        <h1> Diseño de imágenes, anuncios o flyers </h1>
+                    </div>
+                    <div class="main__carousel--item__info--price">
+                        <p> Desde $150 MXN </p>
+                    </div>
+                    <div class="main__carousel--item__info--cta">
+                        <a href="#"> Más información </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="main__carousel--item">
+                <div class="main__carousel--item__img socialmedia">
+                <div class="main__carousel--item__info">
+                    <div class="main__carousel--item__info--title">
+                        <h1> Manejo de redes sociales </h1>
+                    </div>
+                    <div class="main__carousel--item__info--price">
+                        <p> Desde $2,500 MXN </p>
+                    </div>
+                    <div class="main__carousel--item__info--cta">
+                        <a href="#"> Más información </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="main__carousel--item">
+                <div class="main__carousel--item__img fbigads">
+                <div class="main__carousel--item__info">
+                    <div class="main__carousel--item__info--title">
+                        <h1> Anuncios en Facebook e Instagram </h1>
+                    </div>
+                    <div class="main__carousel--item__info--price">
+                        <p> Desde $500 MXN </p>
+                    </div>
+                    <div class="main__carousel--item__info--cta">
+                        <a href="#"> Más información </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="main__carousel--item">
+                <div class="main__carousel--item__img google">
+                <div class="main__carousel--item__info">
+                    <div class="main__carousel--item__info--title">
+                        <h1> Campañas en Google </h1>
+                    </div>
+                    <div class="main__carousel--item__info--price">
+                        <p> Fee mensual de $2,500 MXN </p>
+                    </div>
+                    <div class="main__carousel--item__info--cta">
+                        <a href="#"> Más información </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <button aria-label="Siguiente" class="carousel-next"><i class='bx bx-chevron-right'></i></button>
+        <button aria-label="Anterior" class="carousel-previous"><i class='bx bx-chevron-left' ></i></button>
+        <div class="carousel-indicator"></div>
+
+    </main>
+
+    <div class="menu" id="menu"> 
+        <div class="menu__section">
+            <a id="button-servicios" href="servicios.html" class="menu__section--item select">
+                <i class='bx bxs-briefcase' ></i>
+                <p> Servicios </p>
+            </a>
+        </div>
+        <div class="menu__section">
+            <a id="button-home" href="index.html" class="menu__section--item">
+                <i class='bx bxs-home' ></i>
+                <p> Home </p>
+            </a>
+        </div>
+        <div class="menu__section">
+            <a id="button-contacto" href="contacto.html"  class="menu__section--item">
+                <i class='bx bxs-message' ></i>
+                <p> Contacto </p>
+            </a>
         </div>
     </div>
-    <div class="card__container">
-        <img src="./img/logo.png">
-        <div class="card__info">
-            <h2> Logo </h2>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=525569015183&text=%C2%A1Hola!%20Me%20interesa%20un%20logo."> <button class="white-button"> Me interesa </button> </a>
-        </div>
-    </div>
-    <div class="card__container">
-        <img src="./img/socialmedia.png">
-        <div class="card__info">
-            <h2> Redes sociales </h2>
-            <a target="_blank"  href="https://api.whatsapp.com/send?phone=525569015183&text=%C2%A1Hola!%20Me%20interesa%20la%20gesti%C3%B3n%20de%20redes%20sociales."> <button class="white-button"> Me interesa </button> </a>
-        </div>
-    </div>
-    <div class="card__container">
-        <img src="./img/id.png">
-        <div class="card__info">
-            <h2> Papelería </h2>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=525569015183&text=%C2%A1Hola!%20Me%20interesa%20el%20dise%C3%B1o%20de%20papeler%C3%ADa."> <button class="white-button"> Me interesa </button> </a>
-        </div>
-    </div>
-    <div class="card__container">
-        <img src="./img/ads.png">
-        <div class="card__info">
-            <h2> Anuncios </h2>
-            <a target="_blank"  href="https://api.whatsapp.com/send?phone=525569015183&text=%C2%A1Hola!%20Me%20interesan%20anuncios%20en%20redes%20sociales."> <button class="white-button"> Me interesa </button> </a>
-        </div>
-    </div>
-</section>
-<section class="special">
-    <h1> ¿Necesitas un servicio especial? </h1>
-    <a  target="_blank" href="https://api.whatsapp.com/send?phone=525569015183&text=%C2%A1Hola!%20Me%20interesan%20sus%20servicios.%20"> <button class="black-button"> ¡Contáctanos! </button> </a>
-</section>
-<footer>
-    <a target="_blank" href="https://instagram.com/brandandconnect"> <img src="./icons/ig.png" alt="Instagram de Brand & Connect"> </a>
-    <a target="_blank"  href="https://facebook.com/brandandconnect"> <img src="./icons/contact_facebook.png" alt="Instagram de Brand & Connect"> </a>
-    <a target="_blank" href="malito:contacto@brandandconnect.com"> <img src="./icons/contact_mail.png" alt="Instagram de Brand & Connect"> </a>
-</footer>
-<script>
-    const menu = document.querySelector('.menu');
-    const burguer = document.querySelector('#burguer');
-    
-    burguer.addEventListener('click', show)
-    
-    function show () {
-        if (menu.classList.contains('is-active')) {
-        menu.classList.remove('is-active');
-    } else {
-        menu.classList.add('is-active');
-    }
-    }
-</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script src="/js/carousel.js"></script>
 </body>
 </html>
