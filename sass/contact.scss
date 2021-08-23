@@ -1,0 +1,62 @@
+@import "../sass/component/responsive.scss";
+@import "../sass/component/global.scss";
+@import "../sass/component/color.scss";
+@import "../sass/component/font.scss";
+@import "../sass/component/loader.scss";
+@import "../sass/component/header.scss";
+@import "../sass/component/menu.scss";
+
+body {
+    padding: 100px 0;
+}
+
+.contact {
+    @include wrapper;
+
+    @include media (tablet) {
+        margin-top: calc(30vh - 60px);
+    }
+
+    &__text {
+        margin-bottom: 30px
+    }
+    &__item-container {
+
+        @include media (desktop-s) {
+            @include flex;
+            justify-content: space-between;
+        }
+
+        &--item {
+            width: 100%;
+            height: auto;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            text-decoration: none;
+            @include flex;
+
+            @include media (desktop-s) {
+                width: 30%;
+                margin: 0;
+            }
+
+            i,p {
+                color: $light;
+                margin: 0 5px;
+            }
+            i {
+                font-size: 32px;
+            }
+        }
+        
+    }
+    &__item-container .wh {
+        background-color: #4AC959;
+    }
+    &__item-container .ig {
+        background-color: #833AB4;
+    }
+    &__item-container .fb {
+        background-color: #4267B2;
+    }
+}

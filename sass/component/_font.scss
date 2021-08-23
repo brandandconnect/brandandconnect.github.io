@@ -1,0 +1,18 @@
+
+h1, h2 {
+    font-family: 'Barlow', sans-serif;
+}
+
+h3, h4, p, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, a {
+    font-size: 16px;
+}
+
+p {
+    font-weight: 500;
+    color: $gray-text;
+    line-height: 2;
+}

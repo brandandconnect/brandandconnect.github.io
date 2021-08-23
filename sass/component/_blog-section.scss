@@ -1,0 +1,71 @@
+.blog {
+    margin-top: 100px;
+    overflow: hidden;
+
+    &__text {
+        @include wrapper;
+        margin-bottom: 50px;
+        @include media (tablet) {
+            margin-bottom: 50px;
+        }
+
+    }
+    &__carousel {
+        overflow-x: scroll;
+    }
+    &__card-container {
+        display: inline-flex;
+        @include wrapper;
+        margin-right: 0;
+
+        &--card {
+            width: 60vw;
+            height: 50vh;
+            padding: 10px;
+            margin-right: 20px;
+            @include flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            @include overlay-degrade ($url:'https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', $color: $dark);
+
+            @include media (tablet) {
+                width: 50%;
+                height: 35vh;
+            }
+
+            @include media (desktop-s) {
+                width: 25%;
+                height: 40vh;
+            }
+
+            &__time {
+                width: auto;
+                height: auto;
+                padding: 5px 30px 5px 10px;
+                background-color: $dark;
+                position: relative;
+                right: 33%;
+                p {
+                    color: $light;
+                    font-size: 12px;
+                }
+            }
+            &__title {
+                margin: 10px 0 20px;
+                h3 {
+                    color: $light;
+                }
+            }
+            &__button {
+                width: 100%;
+                height: auto;
+                padding: 10px 0;
+                background-color: $light;
+                color: $dark;
+                text-decoration: none;
+                font-weight: 600;
+                @include flex;
+            }
+        }
+    }
+}
