@@ -1,0 +1,345 @@
+@import "../sass/component/responsive.scss";
+@import "../sass/component/global.scss";
+@import "../sass/component/color.scss";
+@import "../sass/component/font.scss";
+@import "../sass/component/header.scss";
+
+body {
+    padding-top: 80px;
+    @include media (tablet) {
+        padding-top: 100px;
+    }
+    @include media (desktop-s) {
+        padding: 0;
+    }
+}
+
+p {
+    line-height: 1.5
+}
+
+.main {
+    @include wrapper;
+
+    @include media (desktop-s) {
+        width: 68vw;
+        height: 100vh;
+        @include flex;
+        justify-content: space-between;
+    }
+    
+    
+    &__text {
+
+        @include media (desktop-s) {
+            width: 47%;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-weight: 800;
+
+            @include media (tablet) {
+                text-align: center;
+            }
+            
+            @include media (desktop-s) {
+                text-align: left
+            }
+        }
+        p {
+            margin-top: 20px;
+            @include media (tablet) {
+                text-align: center;
+            }
+            @include media (desktop-s) {
+                text-align: left
+            }
+        }
+    }
+
+    &__img {
+        margin: 30px 0;
+
+        @include media (tablet) {
+            width:80%;
+            margin: 50px auto;
+        }
+        @include media (desktop-s) {
+            width: 47%;
+            margin: 0;;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__cta {
+        width: 100%;
+        height: 50px;
+        color: $light;
+        font-weight: 500;
+        background-color: $blue;
+        text-decoration: none;
+        @include flex;
+
+        @include media (tablet) {
+            width:80%;
+            margin: 0 auto
+        }
+
+        @include media (desktop-s) {
+            width: 200px;
+            position: absolute;
+            top: 60vh
+        }
+        @include media (desktop-xl) {
+            top: 55vh
+        }
+    }
+}
+
+.perk {
+
+    @include wrapper;
+    margin-top: 150px;
+
+    @include media (tablet) {
+        width: auto;
+        margin-top: 150px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    @include media (desktop-s) {
+        margin-top: 0;
+    }
+
+    &__item {
+        margin-bottom: 70px;
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include media (tablet) {
+            width: 47%
+        }
+        @include media (desktop-s) {
+            width: 40%
+        }
+
+        &--title {
+            @include flex;
+            i {
+                font-size: 35px;
+                color: $blue;
+                margin-right: 10px;
+            }
+        }
+
+        &--paragraph {
+            margin-top: 20px;
+        }
+
+    }
+
+}
+
+.process {
+    @include wrapper;
+    margin-top: 150px;
+
+    @include media (tablet) {
+        margin-top: 150px;
+    }
+
+    h2, h3, p {
+        @include media (tablet) {
+            text-align: center
+        }
+        @include media (desktop-s) {
+            text-align: left;
+        }
+    }
+    
+    &__text {
+        margin-bottom: 50px;
+
+        h2 {
+            @include media (desktop-s) {
+                text-align: center;
+            }
+        }
+    }
+
+    &__item-container {
+        @include media (desktop-s) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    &__item {
+        margin-bottom: 80px;
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        @include media (tablet) {
+            width: 60%;
+            align-items: center;
+            margin: 0 auto 80px;
+        }
+
+        @include media (desktop-s) {
+            width: 28%;
+            margin: 0;
+        }
+
+        &--number {
+            width: 80px;
+            height: 80px;
+            background-color: $blue;
+            border-radius: 10px;
+            @include flex;
+
+            h3 {
+                color: $light;
+                font-family: 'Barlow', sans-serif;
+                font-weight: bolder;
+                font-size: 54px;
+            }
+        }
+
+        &--title {
+            margin: 20px 0;
+            @include media (desktop-s) {
+                height: 50px;
+                @include flex;
+            }
+            h3 {
+                @include media (desktop-s) {
+                    text-align: center;
+                }
+            }
+        }
+
+        &--paragraph {
+            p {
+                @include media (desktop-s) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+.all {
+    @include wrapper;
+    margin-top: 150px;
+    @include media (tablet) {
+        margin-top: 150px;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+        @include media (tablet) {
+            text-align: center
+        }
+    }
+
+    &__item-container {
+        @include media (tablet) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: #FAFAFA;
+        margin-bottom: 50px;
+
+        @include media (tablet) {
+            width: 47%;
+        }
+        @include media (desktop-s) {
+            width: 30%;
+        }
+
+        &--title {
+            margin-bottom: 20px;
+            @include flex;
+            justify-content: flex-start;
+
+            &__icon {
+                min-width: 60px;
+                min-height: 60px;
+                background-color: $blue;
+                border-radius: 10px;
+                margin-right: 10px;
+                @include flex;
+
+                i {
+                    font-size: 40px;
+                    color: $light;
+                }
+            }
+        }
+
+        &--paragraph {
+
+        }
+
+    }
+
+}
+
+.faq {
+    @include wrapper;
+    margin-top: 150px;
+    
+    @include media (tablet) {
+        margin-top: 150px;
+    }
+    
+    &__text {
+
+    }
+
+    &__question {
+
+    }
+
+}
+
+
+.final {
+    margin-top: 150px;
+    width: 100vw;
+    padding: 50px 0;
+    background-color: $blue;
+
+    h3 {
+        color: $light;
+        line-height: 1.5;
+        @include wrapper;
+
+        @include media (tablet) {
+            text-align: center
+        }
+        @include media (desktop-s) {
+            width: 40vw;
+            margin: 0 auto;
+        }
+    }
+}
