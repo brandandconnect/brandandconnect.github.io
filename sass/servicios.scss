@@ -77,7 +77,7 @@ body {
 
             &__info {
                 width: 100%;
-                height: inherit;
+                height: 80vh;
                 padding: calc(6vh + 60px) 8vw;
                 box-sizing: border-box;
                 display: flex;
@@ -87,6 +87,7 @@ body {
 
                 @include media (desktop-s) {
                     padding: 20vh 5vw;
+                    height: inherit;
                 }
 
 
@@ -110,6 +111,9 @@ body {
                     height: auto;
                     padding: 10px;
                     background-color: $blue;
+                    font-weight: 500;
+                    color: $light;
+                    text-decoration: none;
                     @include flex;
 
                     @include media (tablet) {
@@ -117,12 +121,6 @@ body {
                     }
                     @include media (tablet) {
                         max-width: 100%;
-                    }
-                    
-                    a {
-                        font-weight: 500;
-                        color: $light;
-                        text-decoration: none;
                     }
     
                 }
