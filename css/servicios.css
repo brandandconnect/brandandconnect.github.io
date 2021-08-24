@@ -353,9 +353,10 @@ body {
   background-size: cover;
 }
 .main__carousel--item__info {
-  width: 100%;
-  height: 80vh;
-  padding: calc(6vh + 60px) 8vw;
+  width: 84vw;
+  position: absolute;
+  bottom: 15vh;
+  left: 8vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -374,8 +375,10 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .main__carousel--item__info {
-    padding: 20vh 5vw;
+    width: 100%;
     height: inherit;
+    position: initial;
+    padding: 20vh 5vw;
   }
 }
 .main__carousel--item__info--title h1 {
