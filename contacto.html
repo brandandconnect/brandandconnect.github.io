@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '278145900355477');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=278145900355477&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,21 +70,38 @@
             <h1> Elige tu medio de contacto preferido </h1>
         </div>
         <div class="contact__item-container">
-            <a href="https://api.whatsapp.com/send?phone=5215569015183&text=%C2%A1Hola!%20Me%20interesan%20sus%20servicios." target="_blank" class="contact__item-container--item wh">
+            <a id="pixel-contact-whatsapp" href="https://api.whatsapp.com/send?phone=5215569015183&text=%C2%A1Hola!%20Me%20interesan%20sus%20servicios." target="_blank" class="contact__item-container--item wh">
                 <i class='bx bxl-whatsapp' ></i>
                 <p> +52 55 6901 5183 </p>
             </a>
-            <a href="https://www.instagram.com/brandandconnect/" target="_blank" class="contact__item-container--item ig">
+            <a id="pixel-contact-instagram" href="https://www.instagram.com/brandandconnect/" target="_blank" class="contact__item-container--item ig">
                 <i class='bx bxl-instagram' ></i>
                 <p> @brandandconnect </p>
             </a>
-            <a href="https://www.facebook.com/BrandAndConnect/" target="_blank" class="contact__item-container--item fb">
+            <a id="pixel-contact-facebook" href="https://www.facebook.com/BrandAndConnect/" target="_blank" class="contact__item-container--item fb">
                 <i class='bx bxl-facebook' ></i>
                 <p> Brand & Connect </p>
             </a>
         </div>
     </main>
-
+    <script>
+        fbq('track', 'ViewContent');
+    </script>
+    <script type="text/javascript">
+        document.getElementById('pixel-contact-whatsapp').addEventListener('click', function() {
+        fbq('track', 'Contact');
+        }, false);
+    </script>
+    <script type="text/javascript">
+        document.getElementById('pixel-contact-instagram').addEventListener('click', function() {
+        fbq('track', 'Contact');
+        }, false);
+    </script>
+    <script type="text/javascript">
+        document.getElementById('pixel-contact-facebook').addEventListener('click', function() {
+        fbq('track', 'Contact');
+        }, false);
+    </script>
     <script src="/js/loader.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </body>
