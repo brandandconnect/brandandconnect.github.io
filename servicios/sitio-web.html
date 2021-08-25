@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '566756444514495');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=566756444514495&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +53,7 @@
         <div class="main__img">
             <img src="/asset/illustration/website.svg" alt="" srcset="">
         </div>
-        <a class="main__cta" target="_blank" href="https://api.whatsapp.com/send?phone=5215569015183&text=%C2%A1Hola!%20Me%20interesa%20un%20sitio%20web"> Me interesa </a>
+        <a id="pixel-contact" class="main__cta" target="_blank" href="https://api.whatsapp.com/send?phone=5215569015183&text=%C2%A1Hola!%20Me%20interesa%20un%20sitio%20web"> Me interesa </a>
     </main>
 
     <section class="perk">
@@ -243,8 +260,16 @@
             <p>Nuestro equipo te ayuda a crear un sitio web profesional para tu empresa garantizando los resultados deseados en tiempo y forma sin importar el presupuesto disponible.
             </p>
         </div>
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=5215569015183&text=%C2%A1Hola!%20Me%20interesa%20un%20sitio%20web"> Me interesa </a>
+        <a id="pixel-contact" target="_blank" href="https://api.whatsapp.com/send?phone=5215569015183&text=%C2%A1Hola!%20Me%20interesa%20un%20sitio%20web"> Me interesa </a>
     </section>
+    <script type="text/javascript">
+    document.getElementById('pixel-contact').addEventListener('click', function() {
+        fbq('track', 'Contact');
+    }, false);
+</script>
+    <script>
+        fbq('track', 'ViewContent');
+    </script>
     <script src="/js/accordion.js"></script>
     <script src="/js/wow.min.js"></script>
 </body>
