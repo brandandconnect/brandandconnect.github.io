@@ -86,21 +86,21 @@
         <div class="cta__form">
             <form action="https://formspree.io/f/xqkwwzdy" id="subscribe" method="POST">
                 <label for="form__name"> ¿Cuál es tu nombre? </label>
-                <input type="text" placeholder="Mariana Martínez" id="form__name" required minlength="3" name="_replyto">  
+                <input type="text" placeholder="Mariana Martínez" id="form__name" required minlength="3">  
                 <label for="form__whats"> ¿Cuál es tu WhatsApp? </label>
                 <input type="tel" placeholder="55 5555 5555" name="" id="form__whats" required minlength="10">
                 <button id="subscribeButton" type="submit"> Enviar <i class='bx bxs-send' ></i> </button>
             </form>
         </div>
-        <div class="cta__form-confirm" id="subscribeModal__container">
-            <div class="cta__form-confirm--modal modalClose" id="subscribeModal">
-                <img src="/asset/illustration/confirm.svg" alt="">
-                <h2> Solicitud enviada con éxito </h2>
-                <p> En breve recibirás un mensaje de WhatsApp de un miembro de nuestro equipo. <br> ¡Muchas gracias! </p>
-                <a class="close" id="close" href=""> Cerrar </a>
-            </div>
-        </div>
     </section>
+    <div class="cta__form-confirm" id="subscribeModal__container">
+        <div class="cta__form-confirm--modal modalClose" id="subscribeModal">
+            <img src="/asset/illustration/confirm.svg" alt="">
+            <h2> Solicitud enviada con éxito </h2>
+            <p> En breve recibirás un mensaje de WhatsApp de un miembro de nuestro equipo. <br> ¡Muchas gracias! </p>
+            <a class="close" id="close" href=""> Cerrar </a>
+        </div>
+    </div>
 
     <section class="perk">
         <div class="perk__item wow animate__animated animate__fadeInUp" data-wow-delay='1000ms'>
