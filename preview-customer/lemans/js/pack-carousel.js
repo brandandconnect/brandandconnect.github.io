@@ -7,12 +7,18 @@ new Glider(document.querySelector('.glider'), {
     },
     responsive: [
       {
-        // screens greater than >= 1024px
-        breakpoint: 1279,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 0,
+          slidesToScroll: 2,
         }
-      }
+      },
+      {
+        breakpoint: 1279,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
     ]
 });
