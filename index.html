@@ -41,11 +41,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/asset/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/asset/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./asset/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#fff">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -55,15 +55,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <meta data-n-head="ssr" data-hid="description" name="description" content="Brand & Connect es una agencia digital con sede en la Ciudad de México que ayuda a las PyMES a crecer. Nuestros servicios incluyen diseño UX/UI, desarrollo, diseño gráfico y marketing.">
     <title> Brand & Connect | Agencia que ayuda a Pymes a crecer </title>
 </head>
 <body id="central-home">
-    <div class="lds-ellipsis" id="loader"> <img src="/asset/logo/brandandconnect.png" alt=""> <div class="lds-ellipsis__container"><div></div><div></div><div></div><div></div></div></div>
-
+    <div class="loader" id="loader">
+        <img src="./asset/logo/brandandconnect.png">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
     <header>
-        <img src="/asset/logo/brandandconnect.png" alt="">
+        <img src="./asset/logo/brandandconnect.png" alt="">
     </header>
 
     <main class="main">
@@ -89,19 +91,19 @@
 
     <div class="menu" id="menu"> 
         <div class="menu__section">
-            <a id="button-servicios" href="servicios.html" class="menu__section--item">
+            <a id="button-servicios" href="./servicios.html" class="menu__section--item">
                 <i class='bx bxs-briefcase' ></i>
                 <p> Servicios </p>
             </a>
         </div>
         <div class="menu__section">
-            <a id="button-home" href="index.html" class="menu__section--item select">
+            <a id="button-home" href="./index.html" class="menu__section--item select">
                 <i class='bx bxs-home' ></i>
                 <p> Home </p>
             </a>
         </div>
         <div class="menu__section">
-            <a id="button-contacto" href="contacto.html"  class="menu__section--item">
+            <a id="button-contacto" href="./contacto.html"  class="menu__section--item">
                 <i class='bx bxs-message' ></i>
                 <p> Contacto </p>
             </a>
@@ -182,7 +184,7 @@
         </div>
     </section>
 
-    <section class="blog">
+    <!-- <section class="blog">
         <div class="blog__text">
             <h2> Explora artículos para empresarios como tú </h2>
         </div>
@@ -208,11 +210,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <script>
         fbq('track', 'ViewContent');
     </script>
-    <script src="/js/loader.js"></script>
+    <script src="./js/loader.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <!--     <script type="text/javascript">
         $(document).ready(home()) 
